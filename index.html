@@ -1,0 +1,1862 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <title>Treker</title>
+
+    <!-- css Link -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Favicon Starts -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
+    <!-- Favicon End -->
+
+    <!-- Font Awesome Starts -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Font Awesome End -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+
+</head>
+
+<body>
+    <!-- Top Header Starts-->
+    <div class="container-fluid px-0">
+        <div class="p-3 px-3 d-flex justify-content-between" style="background-color: #1DC5CE; color: #fff;">
+
+            <div class="d-none d-sm-flex gap-3">
+                <div class="hover_under_header">
+                    <i class="bi bi-envelope"></i>
+                    <a href="#" class="text-decoration-none text-white">INFO@TREKER.COM</a>
+                </div>
+                <div class="hover_under_header">
+                    <i class="bi bi-telephone"></i>
+                    <a href="#" class="text-decoration-none text-white">+11 256 3265 01</a>
+                </div>
+            </div>
+
+            <div class="d-flex gap-3 scnd-hd justify-content-between">
+                <div class="hover_under_header">
+                    <i class="bi bi-globe"></i>
+                    <a href="#" class="text-decoration-none text-white">ENG <i class="bi bi-chevron-down"></i></a>
+                </div>
+                <div class="hover_under_header">
+                    <i class="bi bi-person"></i>
+                    <a href="#" class="text-decoration-none text-white">SIGN IN</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- Top Header End -->
+
+    <!-- Navbar Starts -->
+    <div class="container-fluid sticky-top">
+        <div class="row">
+            <div class="col-md-12 bg-white">
+
+                <nav class="navbar navbar-expand-lg">
+                    <div class="container-fluid">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="/">
+                            <img src="images/logo.svg" alt="Logo" width="" height=""
+                                class="d-inline-block align-text-top">
+                        </a>
+
+                        <!-- Navbar links visible on large screens -->
+                        <div class="d-flex d-lg-none gap-3 align-items-center">
+                            <div>
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                            <div class="p-2" style="background-color: #EAF6F6;" id="main">
+                                <button class="openbtn" onclick="openNav()"
+                                    style="background-color: transparent; border: none;">
+                                    <i class="bi bi-cart"></i>
+                                    <span>00 Items</span> &nbsp;
+                                    </span>
+                                    <span style="color: #1DC5CE;">|&nbsp; $00.00</span></button>
+                                </button>
+                            </div>
+
+                            <div id="mySidebar" class="sidebar">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><button type="button"
+                                        class="btn btn-danger">Close</button></a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Contact</a>
+                            </div>
+
+                            <button class="navbar-toggler d-lg-none" type="button" id="navbar-toggler">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+
+                        </div>
+
+                        <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link active" aria-current="page" href="#"
+                                        style="color: #1DC5CE;">Home</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        About Us
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Our Team</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Team Member</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">FAQs</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Gallery</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Shop
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Our Shop</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Product
+                                                Details</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">My Wishlist</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Shopping Cart</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Checkout</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Signup</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Login</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Forgot
+                                                Password</a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Destinations</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Trekking</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        Pages
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Activities</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Destinations
+                                                02</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Tours</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Packages 01</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Packages 02</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Booking</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Terms &
+                                                Conditions</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">404 Page</a></li>
+                                    </ul>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        News
+                                    </a>
+                                    <ul class="dropdown-menu">
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Our Blog</a></li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Blog Classic</a>
+                                        </li>
+                                        <li><a class="dropdown-item text-decoration-none" href="#">Blog Details</a>
+                                        </li>
+
+                                    </ul>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="#">Contact</a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div class="d-none d-lg-flex gap-3 align-items-center">
+                            <div>
+                                <i class="bi bi-search"></i>
+                            </div>
+
+                            <div>
+                                <i class="bi bi-heart"></i>
+                            </div>
+
+                            <div class="p-2" style="background-color: #EAF6F6;" id="main_destop">
+                                <button class="openbtn" onclick="openNav()"
+                                    style="background-color: transparent; border: none;">
+                                    <i class="bi bi-cart"></i>
+                                    <span>00 Items</span> &nbsp;
+                                    </span>
+                                </button>
+                                <span style="color: #1DC5CE;">|&nbsp; $00.00</span></button>
+                            </div>
+
+                            <div id="mySidebar_destop" class="sidebar">
+                                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><button type="button"
+                                        class="btn btn-danger">Close</button></a>
+                                <a href="#">About</a>
+                                <a href="#">Services</a>
+                                <a href="#">Clients</a>
+                                <a href="#">Contact</a>
+                            </div>
+
+                        </div>
+
+                    </div>
+                </nav>
+
+                <!-- Offcanvas Sidebar (only for mobile) -->
+                <div class="offcanvas" id="offcanvasNavbar">
+                    <div class="offcanvas-header">
+                        <a class="navbar-brand" href="/"><img src="images/logo.svg" alt="Treker" title="Treker"></a>
+                        <button type="button" class="btn-close" aria-label="Close" id="offcanvasClose"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    About Us
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Our Team</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Team Member</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">FAQs</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Gallery</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Shop
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Our Shop</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Product Details</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">My Wishlist</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Shopping Cart</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Checkout</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Signup</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Login</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Forgot Password</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Destinations</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Trekking</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    Pages
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Activities</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Destinations 02</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Tours</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Packages 01</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Packages 02</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Booking</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Terms &
+                                            Conditions</a>
+                                    </li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">404 Page</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    News
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Our Blog</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Blog Classic</a></li>
+                                    <li><a class="dropdown-item text-decoration-none" href="#">Blog Details</a></li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contact</a>
+                            </li>
+                        </ul>
+                        <hr>
+
+                    </div>
+                    <div class="d-grid gap-2 p-3" style="margin-bottom: 90px;">
+                        <a href="login.html" class="btn btn-outline-info  text-hover"><span>Login<i
+                                    class="bi bi-chevron-right"></i>
+                            </span></a>
+                        <a href="signup.html" class="btn btn-outline-info  text-hover"><span>Sign Up<i
+                                    class="bi bi-chevron-right"></i>
+                            </span></a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+    <!-- Bannaer Starts -->
+    <div class="container-fluid">
+        <div class="banner">
+            <div class="row bg-light">
+                <div class="col-md-6 col-lg-6 d-flex banner_margin" style="margin-top: 180px;">
+                    <div class="banner-content p-2">
+                        <h1 class="display-6 fw-bold">Never Stop</h1>
+                        <span class="display-2 fw-bold">Exploring</span>
+                        <p class="lead pt-3">Their house is a museum where people come to see ‘em. They really are a
+                            scream the Addams Family. These days are all Happy and Free. These days are all share them
+                            with me oh baby.</p>
+                        <a href="#" class="btn btn-outline btn-lg mt-5 hover_color">View All Tours <img
+                                src="images/logo-icon.svg" alt=""> </a>
+                        <a href="#" class="btn btn-lg mt-5 ms-5"
+                            style="border: 2px solid !important; border-radius: 45px !important;"><i
+                                class="bi bi-play-circle"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-6 banner_image_mobile">
+                    <img src="images/banner-image-1.svg" class="img-fluid" alt="Banner Image">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Bannaer End -->
+
+    <!-- About Treker Starts -->
+    <div class="container-fluid py-5">
+        <div class="row">
+            <!-- Left Side - Images -->
+            <div class="col-lg-6 position-relative">
+                <!-- Outer Image -->
+                <img src="images/about-vector-1.png" alt="Outer Image" class="img-fluid outer-image">
+                <!-- Inner Image (Boy Image) -->
+                <img src="images/about-image-1.svg" alt="Boy Image" class="img-fluid inner-image">
+            </div>
+
+            <!-- Right Side - Text Content -->
+            <div class="col-lg-6">
+                <div class="section-content">
+                    <h3 class="text-muted">About Treker</h3>
+                    <h1 class="fw-bold">
+                        <h1>World Best Travel <br> Agency</h1>
+                    </h1>
+                    <p class="lead mt-5 mb-5">Since 2014, we've helped more than 500,000 people of all ages enjoy
+                        <br> the
+                        best outdoor experience of their lives. Whether it’s for one day or a <br> two-week
+                        vacation, close
+                        to home or a foreign land.
+                    </p>
+
+                    <div class="card shadow p-3 border-0">
+                        <div class="row">
+                            <!-- List Section -->
+                            <div class="col-md-8">
+                                <ul class="list-unstyled">
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-check-circle-fill" style="color: #00d9d9;"></i> <span
+                                            class="ms-3">Ratione voluptatem sequ nesciunt.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-2">
+                                        <i class="bi bi-check-circle-fill" style="color: #00d9d9;"></i> <span
+                                            class="ms-3">Ratione voluptatem.</span>
+                                    </li>
+                                    <li class="d-flex align-items-center">
+                                        <i class="bi bi-check-circle-fill" style="color: #00d9d9;"></i> <span
+                                            class="ms-3">Ratione voluptatem sequi.</span>
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- Video Section -->
+                            <div class="col-md-4 Video_about">
+                                <a href="#" class="d-inline-block">
+                                    <a href="https://www.youtube.com/watch?v=0xhr0j877bI"><img
+                                            src="images/about-image-2.jpg" class="img-fluid rounded shadow" alt=""></a>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- About Treker End -->
+
+
+    <!-- Modern & Beautiful starts-->
+    <div class="container-fluid px-0">
+
+        <!-- Modern & Beautiful starts-->
+        <section class="Modern_section">
+            <div class="row bg-section mx-0" style="background-image: url(images/image-1.jpg);">
+                <div class="col-md-12">
+                    <!-- Modern & Beautiful -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h4 class="text-center mt-5">Modern & Beautiful</h4>
+                        </div>
+                    </div>
+
+                    <!-- Our Most Popular Trekking -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h1 class="text-center mt-3">Our Most Popular <br> Trekking</h1>
+                        </div>
+                    </div>
+
+                    <!-- sidebar slick -->
+
+                    <div class="container card-slider">
+                        <div class="row">
+
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="cards" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+                                    <img src="images/f-image-1.jpg" class="card-img-top zoom-effect" alt="Card Image 1">
+                                    <div class="card-body">
+                                        <div class="price-badge text-white px-3 py-2 fw-bold">$120</div>
+
+                                        <div class="info">
+                                            <span class="i-block"><i class="icon far fa-clock"></i> 5 days</span>
+                                            &ensp; | &ensp;
+                                            <span class="i-block">259P, Himalaya Ag</span>
+                                        </div>
+
+                                        <h4 class="mt-4 mb-4">
+                                            <a href="#" class="card-title info_title">Moscow Red City Land</a>
+                                        </h4>
+
+                                        <div class="rating pb-4">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            &ensp;&ensp;&ensp;&ensp;&ensp;
+                                            <a href="#" class="text-dark hover_color" style="text-decoration: none;"> 05
+                                                Reviews </a>
+                                        </div>
+
+                                        <p class="card-text mb-3">
+                                            Richly varied landscapes, luxurious accommodation and a wide range of wild
+                                            experiences await you.
+                                        </p>
+                                        <div style="color: #dedada;">----------------------------------------</div>
+
+                                        <div class="d-flex p-2">
+                                            <div class="d-flex gap-2 view_details"><a href="#">View Details </a><img
+                                                    src="images/logo-icon.svg" alt="">
+                                            </div>
+                                            <div class="ms-auto video_hover">
+                                                <a href="#"><i class="bi bi-camera-video"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="cards" data-bs-toggle="modal" data-bs-target="#exampleModal2">
+                                    <img src="images/f-image-1.jpg" class="card-img-top" alt="Card Image 2">
+                                    <div class="card-body">
+                                        <div class="price-badge text-white px-3 py-2 fw-bold">$120</div>
+                                        <div class="info">
+                                            <span class="i-block"><i class="icon far fa-clock"></i> 5 days</span>
+                                            &ensp; | &ensp;
+                                            <span class="i-block">259P, Himalaya Ag</span>
+                                        </div>
+
+                                        <h4 class="mt-4 mb-4">
+                                            <a href="#" class="card-title info_title">Moscow Red City Land</a>
+                                        </h4>
+
+                                        <div class="rating pb-4">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            &ensp;&ensp;&ensp;&ensp;&ensp;
+                                            <a href="#" class="text-dark hover_color" style="text-decoration: none;"> 05
+                                                Reviews </a>
+                                        </div>
+
+                                        <p class="card-text mb-3">
+                                            Richly varied landscapes, luxurious accommodation and a wide range of wild
+                                            experiences await you.
+                                        </p>
+                                        <div style="color: #dedada;">----------------------------------------</div>
+
+                                        <div class="d-flex p-2">
+                                            <div class="d-flex gap-2 view_details"><a href="#">View Details </a><img
+                                                    src="images/logo-icon.svg" alt="">
+                                            </div>
+                                            <div class="ms-auto video_hover">
+                                                <a href="#"><i class="bi bi-camera-video"></i></a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <div class="cards" data-bs-toggle="modal" data-bs-target="#exampleModal3">
+                                    <img src="images/f-image-1.jpg" class="card-img-top" alt="Card Image 3">
+                                    <div class="card-body">
+                                        <div class="price-badge text-white px-3 py-2 fw-bold">$120</div>
+                                        <div class="info">
+                                            <span class="i-block"><i class="icon far fa-clock"></i> 5 days</span>
+                                            &ensp; | &ensp;
+                                            <span class="i-block">259P, Himalaya Ag</span>
+                                        </div>
+
+                                        <h4 class="mt-4 mb-4">
+                                            <a href="#" class="card-title info_title">Moscow Red City Land</a>
+                                        </h4>
+
+                                        <div class="rating pb-4">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            &ensp;&ensp;&ensp;&ensp;&ensp;
+                                            <a href="#" class="text-dark hover_color" style="text-decoration: none;"> 05
+                                                Reviews </a>
+                                        </div>
+
+                                        <p class="card-text mb-3">
+                                            Richly varied landscapes, luxurious accommodation and a wide range of wild
+                                            experiences await you.
+                                        </p>
+                                        <div style="color: #dedada;">----------------------------------------</div>
+
+                                        <div class="d-flex p-2">
+                                            <div class="d-flex gap-2 view_details"><a href="#">View Details </a><img
+                                                    src="images/logo-icon.svg" alt="">
+                                            </div>
+                                            <div class="ms-auto video_hover">
+                                                <a href="#"><i class="bi bi-camera-video"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 4 -->
+                            <div class="col-md-4">
+                                <div class="cards" data-bs-toggle="modal" data-bs-target="#exampleModal4">
+                                    <img src="images/f-image-1.jpg" class="card-img-top" alt="Card Image 4">
+                                    <div class="card-body">
+                                        <div class="price-badge text-white px-3 py-2 fw-bold">$120</div>
+
+                                        <div class="info">
+                                            <span class="i-block"><i class="icon far fa-clock"></i> 5 days</span>
+                                            &ensp; | &ensp;
+                                            <span class="i-block">259P, Himalaya Ag</span>
+                                        </div>
+
+                                        <h4 class="mt-4 mb-4">
+                                            <a href="#" class="card-title info_title">Moscow Red City Land</a>
+                                        </h4>
+
+                                        <div class="rating pb-4">
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-fill"></i>
+                                            <i class="bi bi-star-half"></i>
+                                            &ensp;&ensp;&ensp;&ensp;&ensp;
+                                            <a href="#" class="text-dark hover_color" style="text-decoration: none;"> 05
+                                                Reviews </a>
+                                        </div>
+
+                                        <p class="card-text mb-3">
+                                            Richly varied landscapes, luxurious accommodation and a wide range of wild
+                                            experiences await you.
+                                        </p>
+                                        <div style="color: #dedada;">----------------------------------------</div>
+
+                                        <div class="d-flex p-2">
+                                            <div class="d-flex gap-2 view_details"><a href="#">View Details </a><img
+                                                    src="images/logo-icon.svg" alt="">
+                                            </div>
+                                            <div class="ms-auto video_hover">
+                                                <a href="#"><i class="bi bi-camera-video"></i></a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                    <!-- Modal 1 -->
+                    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel1"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <h5 class="modal-title text-center">Modal Title 1</h5>
+                                    <p>Details for Card 1</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 2 -->
+                    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <h5 class="modal-title text-center">Modal Title 2</h5>
+                                    <p>Details for Card 2</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Modal 3 -->
+                    <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabel3"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <h5 class="modal-title text-center">Modal Title 3</h5>
+                                    <p>Details for Card 3</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Model 4 -->
+                    <div class="modal fade" id="exampleModal4" tabindex="-1" aria-labelledby="exampleModalLabel4"
+                        aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                    <h5 class="modal-title text-center">Modal Title 4</h5>
+                                    <p>Details for Card 4</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Modern & Beautiful End-->
+    </div>
+    <!-- Modern & Beautiful end-->
+
+    <!-- Why Choose Treker Starts -->
+    <div class="container-fluid">
+        <section>
+            <div class="row">
+                <div class="col-md-12">
+                    <!-- We Are Awesome -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-center" style="color: #1DC5CE;">We Are Awesome</h5>
+                        </div>
+                    </div>
+                    <!-- We Are Awesome -->
+
+                    <!-- Why Choose Treker -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <i class="bg-vector"></i>
+                            <h2 class="text-center mt-4">Why Choose Treker</h2>
+                        </div>
+                    </div>
+                    <!-- Why Choose Treker -->
+
+                    <!-- why choose treker drecreption -->
+                    <div class="row d-flex text-center mt-5">
+
+                        <div class="col-xl-4 col-lg-4 col-sm-12 col-md-3">
+
+                            <!-- UPER SECTION STARTS -->
+                            <div class="up mb-5">
+                                <div>
+                                    <div class="fs-3" style="color: #1DC5CE;"><i
+                                            class="bi bi-globe-central-south-asia"></i></div>
+                                </div>
+                                <div>
+                                    <h5 class="text-center fw-bold mb-2 mt-2">Diverse Destinations</h5>
+                                </div>
+                                <div>
+                                    <p style="color: #000;">Richly varied landscapes, <br> luxury accommodation Travel.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- UPER SECTION END -->
+
+                            <!-- MIDDLE SECTION STARTS -->
+                            <div class="middle mb-5">
+                                <div>
+                                    <div class="fs-3" style="color: #1DC5CE;"><i class="bi bi-coin"></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-center fw-bold mb-2 mt-2">Value for Money</h4>
+                                </div>
+                                <div>
+                                    <p style="color: #000;">Richly varied landscapes, <br> luxury accommodation Travel.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- MIDDLE SECTION END -->
+
+                            <!-- DOWN SECTION STARTS -->
+                            <div class="down mb-5">
+                                <div>
+                                    <div class="fs-3" style="color: #1DC5CE;"><i class="bi bi-pin-map"></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-center fw-bold mb-2 mt-2">Beautiful Places</h4>
+                                </div>
+                                <div>
+                                    <p style="color: #000;">Richly varied landscapes, <br> luxury accommodation Travel.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- DOWN SECTION END -->
+
+
+
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-sm-12 col-md-6 mb-5">
+                            <img src="images/why-image-1.svg" alt="" class="img-fluid">
+                        </div>
+
+                        <div class="col-xl-4 col-lg-4 col-sm-12 col-md-3">
+
+                            <!-- UPER SECTION STARTS -->
+                            <div class="up mb-5">
+                                <div>
+                                    <div class="fs-3" style="color: #1DC5CE;"><i class="bi bi-calendar2-date-fill"></i>
+                                    </div>
+                                </div>
+                                <div>
+                                    <h5 class="text-center fw-bold mb-2 mt-2">Fast Booking</h5>
+                                </div>
+                                <div>
+                                    <p style="color: #000;">Richly varied landscapes, <br> luxury accommodation Travel.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- UPER SECTION END -->
+
+                            <!-- MIDDLE SECTION STARTS -->
+                            <div class="middle mb-5">
+                                <div>
+                                    <div class="fs-3" style="color: #1DC5CE;"><i class="bi bi-people-fill"></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-center fw-bold mb-2 mt-2">Support Team</h4>
+                                </div>
+                                <div>
+                                    <p style="color: #000;">Richly varied landscapes, <br> luxury accommodation Travel.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- MIDDLE SECTION END -->
+
+                            <!-- DOWN SECTION STARTS -->
+                            <div class="down mb-5">
+                                <div>
+                                    <div class="fs-3" style="color: #1DC5CE;"><i class="bi bi-luggage"></i></i></div>
+                                </div>
+                                <div>
+                                    <h4 class="text-center fw-bold mb-2 mt-2">Passionate Travel</h4>
+                                </div>
+                                <div>
+                                    <p style="color: #000;">Richly varied landscapes, <br> luxury accommodation Travel.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- DOWN SECTION END -->
+
+                        </div>
+
+                    </div>
+                    <!-- why choose treker drecreption -->
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Why Choose Treker End -->
+
+    <!-- Trending Destinations Starts -->
+    <div class="container-fluid bg-light">
+        <div class="row py-5">
+            <div class="col-md-12">
+
+                <!-- Trending Destinations 1 Starts -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <div>
+                            <div class="text-center" style="color: #1DC5CE;">Trending Destinations</div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Trending Destinations 1 End-->
+
+                <!-- Trending Destinations 2 Starts -->
+                <div class="row py-4">
+                    <div class="col-md-12">
+                        <h4 class="text-center fw-bold fs-1">Trending Destinations</h4>
+                    </div>
+                </div>
+                <!-- Trending Destinations 2 End-->
+
+                <div class="container mt-4">
+                    <!-- First Row -->
+                    <div class="row g-4 Gallery-class">
+
+                        <div class="col-lg-8 col-sm-12">
+                            <a href="#"><img src="images/gallery-1.jpg" alt="Gallery Image 1"
+                                    class="img-fluid w-100 h-100"></a>
+                            <div class="card-overlay d-flex flex-column">
+                                <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add To
+                                    Cart</a>
+                                <a href="#" class="btn btn-outline px-4 py-2"><i
+                                        class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-sm-12">
+                            <a href="#"><img src="images/gallery-2.jpg" alt="Gallery Image 2"
+                                    class="img-fluid w-100 h-100"></a>
+                        </div>
+
+                    </div>
+
+                    <!-- Second Row -->
+                    <div class="row g-4 mt-2 Gallery-class">
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="#"><img src="images/gallery-3.jpg" alt="Gallery Image 3"
+                                    class="img-fluid w-100 h-100"></a>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12">
+                            <a href="#"><img src="images/gallery-4.jpg" alt="Gallery Image 4"
+                                    class="img-fluid w-100 h-100"></a>
+                        </div>
+                    </div>
+
+                    <!-- Third Row -->
+                    <div class="row g-4 mt-2 Gallery-class">
+                        <div class="col-lg-4 col-sm-12">
+                            <a href="#"><img src="images/gallery-5.jpg" alt="Gallery Image 5"
+                                    class="img-fluid w-100 h-100"></a>
+                        </div>
+                        <div class="col-lg-8 col-sm-12">
+                            <a href="#"><img src="images/gallery-6.jpg" alt="Gallery Image 6"
+                                    class="img-fluid w-100 h-100"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- Trending Destinations end -->
+
+    <!-- Shop Now Starts -->
+    <div class="container-fluid py-5 mt-5">
+        <div class="row">
+            <div class="col-md-12">
+
+                <!-- Shop Now 1 Starts-->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h5 class="text-center" style="color: #1DC5CE;">Shop Now</h5>
+                    </div>
+                </div>
+                <!-- Shop Now 1 End-->
+
+                <!-- Shop Now 2 Starts-->
+                <div class="row mt-4">
+                    <div class="col-md-12">
+                        <h1 class="text-center fw-bold">Featured Trekking Products</h1>
+                    </div>
+                </div>
+                <!-- Shop Now 2 End-->
+
+
+                <!-- Shop Now 3 Starts-->
+                <div class="container">
+                    <div class="row p-4 g-4 mt-2">
+
+                        <!-- <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card">
+                                <img src="/images/prod-1.jpg" class="card-img-top" alt="...">
+                            </div>
+
+                            <div class="card_wishlist">
+                                <a href="#" class="theme-btn">
+                                    <i class="far fa-heart"></i>
+                                </a>
+                            </div>
+                        </div> -->
+
+                        <!-- 1 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-1.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Smart Air Bag Travel</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 2 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-2.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Travel Suitcase Bag</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 3 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-3.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Travel Light Suitcase</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 4 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-4.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Smart Travel Gadgets</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 5 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-5.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Set of Black Silk Pillow</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 6 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-6.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Travel Slipping Support</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 7 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-7.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Travelling Black Suitcase</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                        <!-- 8 -->
+                        <div class="col-xl-3 col-lg-4 col-md-6 col-sm-12">
+                            <div class="card card-custom">
+                                <div class="wishlist-icon">
+                                    <i class="bi bi-heart"></i>
+                                </div>
+
+                                <img src="images/prod-8.jpg" class="card-img-top" alt="Product Image">
+                                <div class="card-overlay d-flex flex-column">
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i class="bi bi-cart3"></i>&ensp;Add
+                                        To Cart</a>
+                                    <a href="#" class="btn btn-outline px-4 py-2"><i
+                                            class="bi bi-list-ul"></i></i>&ensp;Details</a>
+                                </div>
+                            </div>
+                            <div class="card-body text-center">
+                                <a href="#" class="card-title fw-bold fs-5">Coffee Travel Mug</a>
+                                <p class="card-text fw-bold mt-2" style="color: #1DC5CE;">$225.00</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="row py-4">
+                    <div class="col-md-12">
+                        <button type="button" class="btn btn-outline d-block mx-auto p-3"
+                            style="color: #1DC5CE; border: 1px solid #1DC5CE;">View All Products
+                            <img src="images/logo-icon.svg" alt="" title=""></button>
+                    </div>
+                </div>
+                <!-- Shop Now 3 End-->
+
+            </div>
+        </div>
+    </div>
+    <!-- Shop Now End-->
+
+    <!-- Group Travel to Himalay Starts-->
+    <section>
+        <div class="container-fluid">
+            <div class="row p-5" style="background-image: url(images/image-2.jpg); background-repeat: no-repeat;">
+
+                <section class="p-5">
+
+                    <!-- <div class="col-md-4 p-5">
+                        <div class="card mb-3 w-100 h-100">
+                            <div class="row">
+                                <div class="col-md-2" style="background-color: #1DC5CE;">
+                                    <h6 style="writing-mode: vertical-lr;" class="ms-4 mt-3">Group Travel to Himalay
+                                    </h6>
+                                </div>
+                                <div class="col-md-10">
+                                    <div class="card-body">
+                                        <h5 class="card-title">Card title</h5>
+                                        <p class="card-text">
+                                            This is a wider card with supporting text below as a natural lead-in to
+                                            additional content. This content is a little bit longer.
+                                        </p>
+                                        <p class="card-text">
+                                            <small class="text-muted">Last updated 3 mins ago</small>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+
+                    <div class="col-md-4"></div>
+                </section>
+
+            </div>
+        </div>
+    </section>
+    <!-- Group Travel to Himalay End-->
+
+    <!-- Testimonial Starts -->
+    <div class="container-fluid p-5 mt-3">
+        <section style="background-image: url(images/image-3.jpg);">
+            <div class="row">
+                <div class="col-md-12">
+
+                    <!-- Text section 1 -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <h5 class="text-center" style="color: #1DC5CE;">Review & Testimonial</h5>
+                        </div>
+                    </div>
+
+                    <!-- Text section 2 -->
+                    <div class="row mt-3">
+                        <div class="col-md-12">
+                            <h1 class="text-center">Top Reviews for Treker</h1>
+                        </div>
+                    </div>
+
+                    <!-- CARD Slick -->
+                    <div class="container card-testimonial py-5 mt-2">
+                        <div class="row">
+
+                            <!-- Card 1 -->
+                            <div class="col-md-4">
+                                <div class="card" style="border: 1px solid #1DC5CE;">
+                                    <div class="card-body py-3">
+                                        <div>
+                                            <div class="">
+                                                <img src="images/quotes-1.svg" alt="">
+                                            </div>
+
+                                            <div class="float-end" style="margin-top: -100px;">
+                                                <img src="images/testi-thumb-1.jpg" alt="" style="border-radius: 40%;">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="card-text mt-5">Fight School has specialized in martial
+                                                arts since
+                                                1986 and has one of the most Fight School has specialized.</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6 class="mt-3 fw-bold">Randall Schwartz</h6>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span>Women's Trainner</span>
+
+                                                <div class="ms-5" style="color: #FFA200;">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 2 -->
+                            <div class="col-md-4">
+                                <div class="card" style="border: 1px solid #1DC5CE;">
+                                    <div class="card-body py-3">
+                                        <div>
+                                            <div class="">
+                                                <img src="images/quotes-1.svg" alt="">
+                                            </div>
+
+                                            <div class="float-end" style="margin-top: -50px;">
+                                                <img src="images/testi-thumb-2.jpg" alt="" style="border-radius: 40%;">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="card-text mt-5">We teach martial arts because we love it — not
+                                                because we want to make money on you. Unlike other martial.</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6 class="mt-3 fw-bold">Andru Smith</h6>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span>Women's Trainner</span>
+
+                                                <div class="ms-5" style="color: #FFA200;">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 3 -->
+                            <div class="col-md-4">
+                                <section>
+                                    <div class="card"
+                                        style="background-image: url('images/testi-image-1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 253px; border: 1px solid #1DC5CE;">
+                                        <div>
+                                            <div>
+                                                <!-- Set a fixed height for the image section -->
+                                            </div>
+                                            <div class="card-body position-relative">
+                                                <a href="#"
+                                                    class="position-absolute top-50 start-50 translate-middle text-center text-truncate"
+                                                    style="width: 80%; white-space: nowrap;">
+                                                    MASTER TREKER TRAVEL
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+
+
+                            <!-- Card 4 -->
+                            <div class="col-md-4">
+                                <div class="card" style="border: 1px solid #1DC5CE;">
+                                    <div class="card-body py-3">
+                                        <div>
+                                            <div class="">
+                                                <img src="images/quotes-1.svg" alt="">
+                                            </div>
+
+                                            <div class="float-end" style="margin-top: -100px;">
+                                                <img src="images/testi-thumb-1.jpg" alt="" style="border-radius: 40%;">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="card-text mt-5">Fight School has specialized in martial
+                                                arts since
+                                                1986 and has one of the most Fight School has specialized.</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6 class="mt-3 fw-bold">Randall Schwartz</h6>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span>Women's Trainner</span>
+
+                                                <div class="ms-5" style="color: #FFA200;">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 5 -->
+                            <div class="col-md-4">
+                                <div class="card" style="border: 1px solid #1DC5CE;">
+                                    <div class="card-body py-3">
+                                        <div>
+                                            <div class="">
+                                                <img src="images/quotes-1.svg" alt="">
+                                            </div>
+
+                                            <div class="float-end" style="margin-top: -100px;">
+                                                <img src="images/testi-thumb-2.jpg" alt="" style="border-radius: 40%;">
+                                            </div>
+                                        </div>
+                                        <div>
+                                            <p class="card-text mt-5">We teach martial arts because we love it — not
+                                                because we want to make money on you. Unlike other martial.</p>
+                                        </div>
+                                        <div>
+                                            <div>
+                                                <h6 class="mt-3 fw-bold">Andru Smith</h6>
+                                            </div>
+                                            <div class="d-flex">
+                                                <span>Women's Trainner</span>
+
+                                                <div class="ms-5" style="color: #FFA200;">
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                    <i class="fa fa-star"></i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Card 6 -->
+                            <div class="col-md-4">
+                                <section>
+                                    <div class="card"
+                                        style="background-image: url('images/testi-image-1.jpg'); background-repeat: no-repeat; background-position: center; background-size: cover; height: 253px; border: 1px solid #1DC5CE;">
+                                        <div>
+                                            <div>
+                                                <!-- Set a fixed height for the image section -->
+                                            </div>
+                                            <div class="card-body position-relative">
+                                                <a href="#"
+                                                    class="position-absolute top-50 start-50 translate-middle text-center text-truncate"
+                                                    style="width: 80%; white-space: nowrap;">
+                                                    MASTER TREKER TRAVEL
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </section>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- Testimonial End -->
+
+    <!-- Company Starts -->
+    <section class="py-4">
+        <div class="container mt-5 text-center mb-5">
+
+            <div class="row g-4">
+                <div class="col-md-3">
+                    <div style="border: 1px dashed #E2E2E2; border-radius: 10px;" class="py-4">
+                        <img src="images/sponsor-1.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div style="border: 1px dashed #E2E2E2; border-radius: 10px;" class="py-4">
+                        <img src="images/sponsor-2.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div style="border: 1px dashed #E2E2E2; border-radius: 10px;" class="py-4">
+                        <img src="images/sponsor-3.png" alt="">
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div style="border: 1px dashed #E2E2E2; border-radius: 10px;" class="py-4">
+                        <img src="images/sponsor-4.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Company ENd-->
+
+    <!-- Treker Top News Starts -->
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-md-12">
+
+                <!-- Treker Top News 1 -->
+                <div class="row">
+                    <div class="col-sm-12">
+                        <p class="text-center">Treker Top News</p>
+                    </div>
+                </div>
+
+                <!-- Treker Top News 2 -->
+                <div class="row py-3">
+                    <div class="col-sm-12">
+                        <h3 class="text-center fw-bold fs-3">Treker Top News</h3>
+                    </div>
+                </div>
+
+                <!-- CARD SECTION STARTS-->
+                <section class="bg-light">
+                    <div class="container text-center">
+                        <div class="row py-3 g-3">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card text-white w-100 h-100">
+                                    <img src="images/news-1.jpg" class="card-img w-100 h-100" alt="...">
+                                    <div class="card-img-overlay text-start">
+                                        <span class="card-title fw-bold"
+                                            style="background-color: #1DC5CE; border-radius: 5px; padding: 8px 14px">Trekking</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 py-5"
+                                style="border: 1px solid #1DC5CE; border-radius: 10px">
+                                <div class="card border-0" style="background: none;">
+                                    <div class="py-3 text-center" style="color: #7D7D7D; padding: 0px 80px 0px 0px;">
+                                        <span class="i-block">By : Sword Joy</span> &ensp; | &ensp;
+                                        <span class="i-block">20 March 2022</span>
+                                    </div>
+                                    <div class="text-start">
+                                        <h4 class="py-3" style="padding: 8px 30px 8px 47px;">
+                                            <a href="#" class="text-dark hover_color fs-4 fw-bold"
+                                                style="text-decoration: none;">THE BEST BOXERS IN THEIR WEIGH Target
+                                                CATEGOR</a>
+                                        </h4>
+                                    </div>
+                                    <div class="" style="padding: 5px 15px 5px 47px;">
+                                        <p class="text-start">Fight School has specialized in martial arts since 1986
+                                            and has one of the most innovative.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card text-white w-100 h-100">
+                                    <img src="images/news-2.jpg" class="card-img w-100 h-100" alt="...">
+                                    <div class="card-img-overlay text-start">
+                                        <span class="card-title fw-bold"
+                                            style="background-color: #1DC5CE; border-radius: 5px; padding: 8px 14px">Trekking</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row py-3 g-3">
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 py-5"
+                                style="border: 1px solid #1DC5CE; border-radius: 10px">
+
+                                <div class="card border-0" style="background: none;">
+                                    <div class="py-3" style="color: #7D7D7D; padding: 0px 80px 0px 0px;">
+                                        <span class="i-block">By : Sword Joy</span> &ensp; | &ensp;
+                                        <span class="i-block">20 March 2022</span>
+                                    </div>
+                                    <div class="text-start">
+                                        <h4 class="py-3" style="padding: 8px 30px 8px 47px;">
+                                            <a href="#" class="text-dark hover_color fs-4 fw-bold"
+                                                style="text-decoration: none;">THE UPCOMING WBC CHAMP SHIPS 2022 in
+                                                feb</a>
+                                        </h4>
+                                    </div>
+                                    <div class="" style="padding: 5px 15px 5px 47px;">
+                                        <p class="text-start">Fight School has specialized in martial arts since 1986
+                                            and has one of the most innovative.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                                <div class="card text-white w-100 h-100">
+                                    <img src="images/news-3.jpg" class="card-img w-100 h-100" alt="...">
+                                    <div class="card-img-overlay text-start">
+                                        <span class="card-title fw-bold"
+                                            style="background-color: #1DC5CE; border-radius: 5px; padding: 8px 14px">Trekking</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-xl-4 col-lg-6 col-md-6 col-sm-12 py-5"
+                                style="border: 1px solid #1DC5CE; border-radius: 10px">
+
+                                <div class="card border-0" style="background: none;">
+                                    <div class="py-3" style="color: #7D7D7D; padding: 0px 80px 0px 0px;">
+                                        <span class="i-block">By : Sword Joy</span> &ensp; | &ensp;
+                                        <span class="i-block">20 March 2022</span>
+                                    </div>
+                                    <div class="text-start">
+                                        <h4 class="py-3" style="padding: 8px 30px 8px 47px;">
+                                            <a href="#" class="text-dark hover_color fs-4 fw-bold"
+                                                style="text-decoration: none;">EFFECTIVE STRATEGIES & TIPS FROM THE
+                                                BEST</a>
+                                        </h4>
+                                    </div>
+                                    <div class="" style="padding: 5px 15px 5px 47px;">
+                                        <p class="text-start">Fight School has specialized in martial arts since 1986
+                                            and has one of the most innovative.</p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!-- CARD SECTION END -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Treker Top News End -->
+
+    <!-- Newsletter Starts -->
+    <div class="container-fluid py-5">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="container mt-5" style="background-color: #1DC5CE; border-radius: 5px;">
+                    <section>
+                        <div class="row p-5"
+                            style="background-image: url(images/newsletter-bg.png); background-repeat: no-repeat; background-size: cover;">
+                            <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12">
+                                <div>
+                                    <img src="images/newsletter-image.svg" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                            <div class="col-xl-5 col-lg-6 col-md-12 col-sm-12 py-5">
+
+                                <div>
+                                    <p class="text-white">Newsletter</p>
+                                </div>
+
+                                <div>
+                                    <h1 class="text-white text-uppercase fw-bold fs-1">SUBSCRIBE NOW</h1>
+                                </div>
+
+                                <div>
+                                    <p class="text-white py-3">Fight School has specialized in martial arts since 1986
+                                        and has one of the most innovative programs in the nation.</p>
+                                </div>
+
+                                <div>
+                                    <form action="#">
+                                        <div class="bg-white p-4 d-flex" style="border-radius: 5px;">
+
+                                            <div style="color: #1DC5CE;" class="fw-bold fs-5">
+                                                <span><i class="bi bi-envelope"></i></span>
+                                            </div>
+
+                                            <div class="ms-3 mt-1">
+                                                <input type="email" name="email" value="" placeholder="Email Address"
+                                                    style="background-color: transparent;">
+                                            </div>
+                                        </div>
+
+                                        <div class="float-end me-3 form-button" style="margin-top: -58px;">
+                                            <button type="button" class="btn btn-secondary p-2"
+                                                style="background-color: #1DC5CE; border: none;"><span>SUBSCRIBE <i
+                                                        class="icon fa fa-paper-plane"></i></span></button>
+                                        </div>
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Newsletter End -->
+
+    <!-- Footer Starts -->
+    <div class="container-fluid bg-light">
+        <div class="row"
+            style="background-image: url(images/f-bottom-bg.svg); background-repeat: no-repeat; background-size: cover;">
+            <div class="col-md-12">
+
+                <!-- Footer 1 -->
+                <div class="container">
+                    <footer>
+                        <!-- Up Footer -->
+                        <div class="row py-3 p-5">
+
+                            <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 text-center text-sm-start">
+                                <div class="py-3">
+                                    <img src="images/logo.svg" alt="">
+                                </div>
+
+                                <div class="py-2">
+                                    Treker was founded in 1991 by a group of safety-focused professionals who created
+                                    The Wingman Standard for rigorously vetting air charter operators.
+                                </div>
+                            </div>
+
+                            <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 p-5 text-center text-sm-start">
+                                <div class="row">
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <h6 class="fw-bold" style="margin-left: 1.9rem;">EUROPE</h6>
+
+                                        <div class="py-3">
+                                            <ul style="list-style: none;">
+                                                <li class="py-2">Europe 45 Gloucester Road London DT1M 3BF</li>
+                                                <li><a href="tel:+44(0)2036715709"></a>+44 (0)20 3671 5709</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <h6 class="fw-bold" style="margin-left: 1.9rem;">ASIA & PACIFIC</h6>
+
+                                        <div class="py-3">
+                                            <ul style="list-style: none;">
+                                                <li class="py-2">Europe 45 Gloucester Road London DT1M 3BF</li>
+                                                <li><a href="tel:+44(0)2036715709"></a>+44 (0)20 3671 5709</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4 col-md-4 col-sm-12">
+                                        <h6 class="fw-bold" style="margin-left: 1.9rem;">NORTH AMERICA</h6>
+
+                                        <div class="py-3">
+                                            <ul style="list-style: none;">
+                                                <li class="py-2">Europe 45 Gloucester Road London DT1M 3BF</li>
+                                                <li><a href="tel:+44(0)2036715709"></a>+44 (0)20 3671 5709</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+                        <!-- Up Footer -->
+
+                        <!-- Middale -->
+                        <section>
+                            <div class="row p-4" style="background-color: #EAF6F6;">
+
+                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 text-center text-sm-start">
+
+                                    <div class="row">
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <h6 class="fw-bold" style="margin-left: 1.9rem;">About us</h6>
+                                            <hr style="color: #1DC5CE;" class="w-50 fw-bold">
+                                            <div class="footer-hover">
+                                                <ul style="list-style: none;">
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">About Us</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Community Blog</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Rewards</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Work with Us</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Contact</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <h6 class="fw-bold" style="margin-left: 1.9rem;">Exlopre Treker</h6>
+                                            <hr style="color: #1DC5CE;" class="w-50 fw-bold">
+                                            <div class="footer-hover">
+                                                <ul style="list-style: none;">
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Account</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Privacy Policy</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Affilitate</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Program</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Our Partner</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4 col-md-4 col-sm-12">
+                                            <h6 class="fw-bold" style="margin-left: 1.9rem;">Quick lInks</h6>
+                                            <hr style="color: #1DC5CE;" class="w-50 fw-bold">
+                                            <div class="footer-hover">
+                                                <ul style="list-style: none;">
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">About Us</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">News & press</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Blog</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">FAQs</a></li>
+                                                    <li class="py-1"><a href="#" class="text-decoration-none"
+                                                            style="color: #505050;">Careers</a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-xl-4 col-lg-6 col-md-8 col-sm-12 text-center text-sm-start">
+                                    <h6 class="fw-bold">Gallery</h6>
+
+                                    <div class="row">
+                                        <div class="d-flex gap-2 justify-content-center">
+                                            <div class="col-sm-4">
+                                                <img src="images/footer-thumb-1.jpg" alt="" style="border-radius: 5px;">
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <img src="images/footer-thumb-2.jpg" alt="" style="border-radius: 5px;">
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <img src="images/footer-thumb-3.jpg" alt="" style="border-radius: 5px;">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="row mt-2">
+                                        <div class="d-flex gap-2 justify-content-center">
+                                            <div class="col-sm-4">
+                                                <img src="images/footer-thumb-4.jpg" alt="" style="border-radius: 5px;">
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <img src="images/footer-thumb-5.jpg" alt="" style="border-radius: 5px;">
+                                            </div>
+
+                                            <div class="col-sm-4">
+                                                <img src="images/footer-thumb-6.jpg" alt="" style="border-radius: 5px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                        <!-- Middale -->
+
+                        <!-- Down -->
+                        <div class="container">
+
+                            <div class="row mb-4 mt-4 ">
+
+                                <div class="col-md-6 text-center">
+                                    <ul style="list-style: none;" class="d-flex gap-3">
+                                        <li style="border: 1px solid #1DC5CE;" class="p-1 rounded rounded-circle"><a
+                                                href="#" style="color: #1DC5CE;"><i
+                                                    class="bi bi-facebook fs-5 px-1"></i></a></li>
+                                        <li style="border: 1px solid #1DC5CE;" class="p-1 rounded rounded-circle"><a
+                                                href="#" style="color: #1DC5CE;"><i
+                                                    class="bi bi-twitter fs-5 px-1"></i></a></li>
+                                        <li style="border: 1px solid #1DC5CE;" class="p-1 rounded rounded-circle"><a
+                                                href="#" style="color: #1DC5CE;"><i
+                                                    class="bi bi-youtube fs-5 px-1"></i></a></li>
+                                        <li style="border: 1px solid #1DC5CE;" class="p-1 rounded rounded-circle"><a
+                                                href="#" style="color: #1DC5CE;"><i
+                                                    class="bi bi-instagram fs-5 px-1"></i></a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 text-center text-sm-start">
+                                    <p class="float-end" style="color: #505050;">Copyright © 2022 Treker. All Rights
+                                        Reserved. Designed by ThemeIM</p>
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!-- Down -->
+
+                    </footer>
+                </div>
+                <!-- Footer 2 -->
+
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        crossorigin="anonymous"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</body>
+
+</html>
